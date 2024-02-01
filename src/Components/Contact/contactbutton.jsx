@@ -1,9 +1,11 @@
 import React from "react";
-import ButtonSweep from './../Boilerplate/ButtonSweep/buttonsweep';
-import "animate.css";
 import { NameValidation } from './Validation/NameValidation';
 import { IsEmail } from "./Validation/EmailValidation";
+
 import emailjs from 'emailjs-com';
+import ButtonSweep from './../Boilerplate/ButtonSweep/buttonsweep';
+
+import "animate.css";
 
 var IsFormValid = true;
 var PopUpMessages = [];
@@ -26,15 +28,15 @@ function ValidateInput(containerId, validatingDelegate, popUpMessage)
 function CreatePopUpMessage()
 {
     var toReturn = "Invalid"
-    PopUpMessages.map((message, i) => 
+    PopUpMessages.forEach((message, i) => 
     {
         //First Element
-        if(i == 0)
+        if(i === 0)
         {
             toReturn += " " + message;
         }
         //Last Element
-        else if(i == PopUpMessages.length - 1)
+        else if(i === PopUpMessages.length - 1)
         {
             toReturn += " and " + message;
         }

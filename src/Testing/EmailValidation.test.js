@@ -1,4 +1,3 @@
-import { render } from "@testing-library/react";
 import { IsEmail } from "../Components/Contact/Validation/EmailValidation";
 import "@testing-library/jest-dom/extend-expect";
 

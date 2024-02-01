@@ -1,10 +1,7 @@
-import { Link } from "react-router-dom"
 import Carousel from "../Components/Carousel/carousel"
-import YoutubeIcon from './../Components/Footer/youtubeicon';
 import Title from './../Components/Boilerplate/Title/title';
 import Subtitle from './../Components/Boilerplate/Title/subtitle';
 import Description from './../Components/Boilerplate/Description/desc';
-import { useState } from 'react';
 
 const Slide = ({title, subtitle, paragraphs, selectedImage, images, url}) => {
     var selectedImageAsDom = document.getElementsByClassName("carousel-selected-img__container");
@@ -58,7 +55,7 @@ const SquaresSlide = () => {
             `The application features a fully working registration and login page, where the app uses your username to store a highscore
             should you get one.`,
         ]}
-        selectedImage={<img className="carousel-selected-img" src={require("../Components/Carousel/CarouselPics/Squares/SquaresLoginPage.Png")}/>} 
+        selectedImage={<img className="carousel-selected-img" src={require("../Components/Carousel/CarouselPics/Squares/SquaresLoginPage.Png")} alt=""/>} 
         images={[
             <img className="carousel-unselected-img" src={require("../Components/Carousel/CarouselPics/Squares/SquaresRegisterPage.Png")} alt=""/>,
             <img className="carousel-unselected-img" src={require("../Components/Carousel/CarouselPics/Squares/SquaresAPI.Png")} alt=""/>,

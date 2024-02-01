@@ -27,7 +27,7 @@ const Carousel = ({ slides }) => {
                     setIndex((currentIndex) => currentIndex - 1)
                 }} className="carousel__button-img" src={LeftArrow} alt="<" width="40" height="40"></img>
             </button>
-                {(slides[currentIndex] != undefined) ? slides[currentIndex]() : slides[0]()}
+                {(slides[currentIndex] !== undefined) ? slides[currentIndex]() : slides[0]()}
             <button className="carousel__button">
                 <img onClick={() => 
                     {

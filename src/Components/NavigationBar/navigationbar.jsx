@@ -10,7 +10,7 @@ export function Animation( newSelectedID )
 {
     console.log(newSelectedID);
     //So animation doesn't occur on already selected elements
-    if(newSelectedID == currentSelectedID)
+    if(newSelectedID === currentSelectedID)
     {
         return;
     }

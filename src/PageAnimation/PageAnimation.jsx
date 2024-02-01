@@ -1,4 +1,3 @@
-import React from "react";
 import "./pageanimation.css";
 
 export function PageChangeAnimation(){

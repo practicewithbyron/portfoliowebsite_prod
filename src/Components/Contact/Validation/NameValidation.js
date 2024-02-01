@@ -1,5 +1,3 @@
-import React from "react";
-
 function IsCharNumber(c)
 {
     return !isNaN(c);

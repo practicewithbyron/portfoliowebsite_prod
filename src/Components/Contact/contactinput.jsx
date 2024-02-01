@@ -1,5 +1,4 @@
 import React from "react";
-import Border from './border';
 import "./contact.css";
 
 
