@@ -19,11 +19,11 @@ class App extends Component {
             <div className="page">
                 <NavigationBar/>
                 <div id="content">
-                    <Route exact path="/Home" component={Introduction}/>
-                    <Route exact path="/About" component={About}/>
-                    <Route exact path="/Experience" component={Experience}/>
-                    <Route exact path="/Work" component={Work}/>
-                    <Route exact path="/Contact" component={Contact}/>
+                    <Route exact path="/" component={Introduction}/>
+                    <Route exact path="/about" component={About}/>
+                    <Route exact path="/experience" component={Experience}/>
+                    <Route exact path="/work" component={Work}/>
+                    <Route exact path="/contact" component={Contact}/>
                 </div>
                 <Footer/>
             </div>
