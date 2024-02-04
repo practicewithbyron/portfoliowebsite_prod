@@ -8,7 +8,6 @@ var currentSelectedID = "home";
 
 export function Animation( newSelectedID )
 {
-    console.log(newSelectedID);
     //So animation doesn't occur on already selected elements
     if(newSelectedID === currentSelectedID)
     {
@@ -16,8 +15,6 @@ export function Animation( newSelectedID )
     }
 
     PageChangeAnimation();
-
-    console.log("reached past page change");
 
     var prevElement = document.getElementById(currentSelectedID);
     var prevChildElement = document.getElementById(`${currentSelectedID}-text`);
@@ -48,7 +45,7 @@ export function Animation( newSelectedID )
 const NavigationBar = () => {
     return(
         <div className="navigation-bar__container">
-            <Link className="navigation-bar__link" to="/Home">
+            <Link className="navigation-bar__link" to="/">
                 <div onClick={() => 
                 {
                     Animation("home");
@@ -56,7 +53,7 @@ const NavigationBar = () => {
                     <h3 id="home-text" className="navigation-bar-text__selected">Home</h3>
                 </div>
             </Link>
-            <Link className="navigation-bar__link" to="/About">
+            <Link className="navigation-bar__link" to="/about">
                 <div onClick={() => 
                 {
                     Animation("about");
@@ -64,7 +61,7 @@ const NavigationBar = () => {
                     <h3 id="about-text" className="navigation-bar-text__unselected">About</h3>
                 </div>
             </Link>
-            <Link className="navigation-bar__link" to="/Experience">
+            <Link className="navigation-bar__link" to="/experience">
                 <div onClick={() => 
                 {
                     Animation("experience");
@@ -72,7 +69,7 @@ const NavigationBar = () => {
                     <h3 id="experience-text" className="navigation-bar-text__unselected">Experience</h3>
                 </div>
             </Link>
-            <Link className="navigation-bar__link" to="/Work">
+            <Link className="navigation-bar__link" to="/work">
                 <div onClick={() => 
                 {
                     Animation("work");
@@ -80,7 +77,7 @@ const NavigationBar = () => {
                     <h3 id="work-text" className="navigation-bar-text__unselected">Work</h3>
                 </div>
             </Link>
-            <Link className="navigation-bar__link" to="/Contact">
+            <Link className="navigation-bar__link" to="/contact">
                 <div onClick={() => 
                 {
                     Animation("contact");

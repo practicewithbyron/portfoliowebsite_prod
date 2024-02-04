@@ -1,10 +1,10 @@
 import "../style.css";
-import ButtonSweep from "../Components/Boilerplate/ButtonSweep/buttonsweep";
+import ButtonSweep from "../Components/Boilerplate/ButtonSweep/buttonsweep.jsx";
 import IntroductionHeader from "../Components/Introduction/introductionheader.jsx";
-import IntroductionDescription from "../Components/Introduction/introductiondescription";
-import { Animation } from "../Components/NavigationBar/navigationbar";
+import IntroductionDescription from "../Components/Introduction/introductiondescription.jsx";
+import { Animation } from "../Components/NavigationBar/navigationbar.jsx";
 
-export function Introduction()
+export const Introduction = () =>
 {
     return (
         <div className="introduction">

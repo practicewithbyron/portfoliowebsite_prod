@@ -1,7 +1,7 @@
 import Carousel from "../Components/Carousel/carousel"
-import Title from './../Components/Boilerplate/Title/title';
-import Subtitle from './../Components/Boilerplate/Title/subtitle';
-import Description from './../Components/Boilerplate/Description/desc';
+import Title from '../Components/Boilerplate/Title/title';
+import Subtitle from '../Components/Boilerplate/Title/subtitle';
+import Description from '../Components/Boilerplate/Description/desc';
 
 const Slide = ({title, subtitle, paragraphs, selectedImage, images, url}) => {
     var selectedImageAsDom = document.getElementsByClassName("carousel-selected-img__container");
